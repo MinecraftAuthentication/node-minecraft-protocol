@@ -15,11 +15,11 @@ module.exports = function (client, server, { beforePing = null }) {
         online: server.playerCount,
         sample: []
       },
-      description: typeof(server.motd) == 'function'
-          ? server.motd(client, server)
-          : Array.isArray(server.motd)
-              ? { text: '', extra: server.motd }
-              : { text: server.motd },
+      description: typeof (server.motd) === 'function'
+        ? server.motd(client, server)
+        : Array.isArray(server.motd)
+          ? { text: '', extra: server.motd }
+          : { text: server.motd },
       favicon: server.favicon
     }
 
