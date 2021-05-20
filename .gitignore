@@ -1,6 +1,7 @@
 node_modules
 test/npm-debug.log
-test/server
+test/server*
 package-lock.json
 versions/
 .idea
+src/client/*.json
