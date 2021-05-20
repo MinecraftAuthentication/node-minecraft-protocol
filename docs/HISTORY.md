@@ -1,5 +1,41 @@
 # History
 
+## 1.25.0
+
+* add fullBuffer to packet event
+
+## 1.24.2
+
+* Throw if data is not available for a given version (@U9G)
+
+## 1.24.1
+
+* fix write to launcher_accounts.json (@majorblake)
+
+## 1.24.0
+
+* Using launcher_accounts.json as new token source (@Moondarker)
+* Fix msa caching bug (@extremeheat)
+
+## 1.23.3
+
+* add a reason to client timeout
+
+## 1.23.2
+
+* Remove test code from microsoftAuth
+
+## 1.23.1
+
+* revert refactor tns dns for now to fix it
+
+## 1.23.0
+
+* add auth type to types (@u9g)
+* refactor tcp dns (@Kashalls)
+* fix a launcher profile.json problem (@Rob9315)
+* Msa device auth (@extremeheat)
+
 ## 1.22.0
 
 * Don't stringify every packet if debug not enabled (@evan-goode)
