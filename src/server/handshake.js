@@ -10,7 +10,8 @@ module.exports = function (client, server, { version }) {
 
     if (version === false || version === undefined) {
       if (client.protocolVersion === 755) {
-        client.version = "21w07a"
+        client.protocolVersion = "21w07a"
+        client.version = client.protocolVersion
       } else if (require('minecraft-data')(client.protocolVersion)) {
         client.version = client.protocolVersion
       } else {
