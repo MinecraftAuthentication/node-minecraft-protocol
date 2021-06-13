@@ -8,7 +8,7 @@ module.exports = function (client, server, { beforePing = null }) {
     const response = {
       version: {
         name: server.mcversion.minecraftVersion,
-        protocol: client.protocolVersion
+        protocol: server.mcversion.version
       },
       players: {
         max: server.maxPlayers,
