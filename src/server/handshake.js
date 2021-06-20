@@ -11,9 +11,6 @@ module.exports = function (client, server, { version }) {
     if (version === false || version === undefined) {
       if (require('minecraft-data')(client.protocolVersion)) {
         client.version = client.protocolVersion
-      } else if (client.protocolVersion === 755) {
-        client.protocolVersion = "21w07a"
-        client.version = client.protocolVersion
       } else {
         client.end('Protocol version ' + client.protocolVersion + ' is not supported')
       }
